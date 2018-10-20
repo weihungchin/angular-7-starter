@@ -1,13 +1,12 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { FoodModule } from './food/food.module';
 import { NgModule } from '@angular/core';
-
+import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FoodComponent } from './food/food.component';
 
 @NgModule({
-  declarations: [AppComponent, FoodComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule, FoodModule],
   providers: [],
   bootstrap: [AppComponent]
 })
