@@ -1,32 +1,16 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">App Header</div>
 
-<div> <b>Content 1</b></div>
-
-<div>
-  Cities (Components without separate module)
-  <ul>
-    <li>
-      New York
-    </li>
-    <li>London</li>
-    <li>Tokyo</li>
-  </ul>
+<div class="flex-container">
+  <div class="flex-item">
+    <a [routerLink]="['cities']"> Cities</a>
+  </div>
+  <div class="flex-item">
+    <a [routerLink]="['food']"> Food </a>
+  </div>
+  <div class="flex-spacer"></div>
 </div>
 
 <hr />
-
-<div> <b>Content 2</b></div>
-<!-- TODO: extract this into separate component -->
-<div>
-  Food &#x2705;
-  <ul>
-    <li>Burger 🍔</li>
-    <li>Kebab 🍢</li>
-    <li>Sushi 🍣</li>
-  </ul>
-</div>
-
-
 
 <router-outlet></router-outlet>
